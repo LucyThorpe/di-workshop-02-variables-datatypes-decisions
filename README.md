@@ -56,30 +56,30 @@ happens.
 
 | Line                | Expected Result | Actual Result | Were you right? Why? |
 | ------------------- | --------------- | ------------- | -------------------- |
-| `2 + 2`             |                 |               |                      |
-| `5 - 3`             |                 |               |                      |
-| `3 * 6`             |                 |               |                      |
-| `10 / 2`            |                 |               |                      |
-| `5 / 2`             |                 |               |                      |
-| `5.0 / 2`           |                 |               |                      |
-| `“hello” + “world”` |                 |               |                      |
-| `“Hello” - “world”` |                 |               |                      |
-| `3 + “3”`           |                 |               |                      |
-| `typeof “hello”`    |                 |               |                      |
-| `typeof 13`         |                 |               |                      |
-| `typeof true`       |                 |               |                      |
-| `typeof 3 + 5`      |                 |               |                      |
-| `typeof (3 + 5)`    |                 |               |                      |
-| `typeof (3 + “3”)`  |                 |               |                      |
-| `3 == 3`            |                 |               |                      |
-| `3 == 2`            |                 |               |                      |
-| `typeof (3 == 3)`   |                 |               |                      |
-| `3 != 3`            |                 |               |                      |
-| `3 != 2`            |                 |               |                      |
-| `3 == 1 + 2`        |                 |               |                      |
-| `3 == 2 + 2`        |                 |               |                      |
-| `3 < 2 + 2`         |                 |               |                      |
-| `3 > 2 + 2`         |                 |               |                      |
+| `2 + 2`             |     4           |    4          |     yes              |
+| `5 - 3`             |     2           |    2          |     yes              |
+| `3 * 6`             |     18          |    18         |     yes              |
+| `10 / 2`            |     5           |    5          |     yes              |
+| `5 / 2`             |     2.5         |    2.5        |     yes              |
+| `5.0 / 2`           |     2.5         |    2.5        |     yes              |
+| `“hello” + “world”` |     helloworld  |    helloworld |     yes              |
+| `“Hello” - “world”` |     NaN         |    NaN        |     yes              |
+| `3 + “3”`           |     "33"        |    "33"       |     yes              |
+| `typeof “hello”`    |     "string"    |    "string"   |     yes              |
+| `typeof 13`         |     number      |    number     |     yes              |
+| `typeof true`       |     word        |    boolean    |     no               |
+| `typeof 3 + 5`      |     number      |    number5    |     no               |
+| `typeof (3 + 5)`    |     number      |    number     |     yes              |
+| `typeof (3 + “3”)`  |     string      |    string     |     yes              |
+| `3 == 3`            |     true        |    true       |     yes              |
+| `3 == 2`            |     false       |    false      |     yes              |
+| `typeof (3 == 3)`   |     boolean     |    boolean    |     yes              |
+| `3 != 3`            |     false       |    false      |     yes              |
+| `3 != 2`            |     true        |    true       |     yes              |
+| `3 == 1 + 2`        |     true        |    true       |     yes              |
+| `3 == 2 + 2`        |     false       |    false      |     yes              |
+| `3 < 2 + 2`         |     true        |    true       |     yes              |
+| `3 > 2 + 2`         |     false       |    false      |     yes              |
 
 ## Task 2
 
